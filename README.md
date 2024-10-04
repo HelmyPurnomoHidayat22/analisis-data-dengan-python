@@ -31,3 +31,6 @@ Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jen
     ```sh
     streamlit run PROYEKAKHIR.py
     ```
+
+#Dibawah ini link deploy streamlit
+**https://ecommerc-analysdataprojectakhir.streamlit.app/**
