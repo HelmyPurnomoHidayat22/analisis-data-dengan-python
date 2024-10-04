@@ -34,4 +34,4 @@ Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jen
     pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
    streamlit run PROYEKAKHIR.py
 ```  #Dibawah ini link deploy streamlit
-**https://ecommerc-analysdataprojectakhir.streamlit.app/**
+https://ecommerc-analysdataprojectakhir.streamlit.app/
