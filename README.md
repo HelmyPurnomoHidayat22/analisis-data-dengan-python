@@ -4,6 +4,9 @@
 ### Deskripsi
 Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jenis Diagram
 
+### Catatan
+untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tahun 2017 keatas 
+
 ## Open Source
 
 - [Streamlit] - Kerangka kerja untuk membuat aplikasi web dengan Python
