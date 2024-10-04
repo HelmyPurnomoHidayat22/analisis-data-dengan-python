@@ -36,5 +36,5 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     cd dashboard
     pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
    streamlit run PROYEKAKHIR.py
-```  #Dibawah ini link deploy streamlit
+```### Dibawah ini link deploy streamlit
 https://ecommerc-analysdataprojectakhir.streamlit.app/
