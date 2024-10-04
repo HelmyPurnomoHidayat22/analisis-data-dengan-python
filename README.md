@@ -29,8 +29,9 @@ Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jen
 3. Jalankan aplikasi:
 
     ```sh
-    streamlit run PROYEKAKHIR.py
-    ```
-
-#Dibawah ini link deploy streamlit
+    cd D:
+    cd dashboard
+    pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
+   streamlit run PROYEKAKHIR.py
+```  #Dibawah ini link deploy streamlit
 **https://ecommerc-analysdataprojectakhir.streamlit.app/**
