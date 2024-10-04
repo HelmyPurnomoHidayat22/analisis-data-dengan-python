@@ -29,5 +29,5 @@ Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jen
 3. Jalankan aplikasi:
 
     ```sh
-    streamlit run app.py
+    streamlit run PROYEKAKHIR.py
     ```
