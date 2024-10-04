@@ -8,10 +8,10 @@ from datetime import datetime
 # Fungsi untuk memuat dataset menggunakan cache_data yang baru
 @st.cache_data
 def load_data():
-    customers = pd.read_csv('https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/dashboard/olist_customers_dataset.csv')
-    orders = pd.read_csv('https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/dashboard/olist_orders_dataset.csv')
-    payments = pd.read_csv('https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/dashboard/olist_order_payments_dataset.csv')
-    
+    customers = pd.read_csv('https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/olist_customers_dataset.csv')
+    orders = pd.read_csv('https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/olist_orders_dataset.csv')
+    payments = pd.read_csv('https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/olist_order_payments_dataset.csv')
+
     # Gabungkan dataset
     merged_data = pd.merge(customers, orders, on='customer_id')
     merged_data = pd.merge(merged_data, payments, on='order_id')
