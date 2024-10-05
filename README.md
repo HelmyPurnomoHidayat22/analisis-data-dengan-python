@@ -15,26 +15,15 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
 - [Matplotlib] - Library untuk membuat grafik statis, animasi, dan interaktif
 
 ## Instalasi
-
-1. Clone repository ini:
-
-    ```sh
-    git clone https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python.git
-    cd dashboard
-    ```
-
-2. Install dependensi yang diperlukan:
-
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. Jalankan aplikasi:
-
     ```sh
     cd D:
+    mkdir D:\dashboard
     cd dashboard
+    git clone https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python.git
     pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
-   streamlit run PROYEKAKHIR.py
+    streamlit run PROYEKAKHIR.py
+    ```
+
+
 ```### Dibawah ini link deploy streamlit
 https://ecommerc-analysdataprojectakhir.streamlit.app/
