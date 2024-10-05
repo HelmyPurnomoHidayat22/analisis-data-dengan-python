@@ -20,6 +20,9 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     mkdir D:\dashboard
     cd dashboard
     git clone https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python.git
+    cd analisis-data-dengan-python
+    python -m venv env
+    .\env\Scripts\activate
     pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
     cd dashboard
     streamlit run PROYEKAKHIR.py
