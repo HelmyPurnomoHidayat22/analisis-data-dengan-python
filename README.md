@@ -21,6 +21,7 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     cd dashboard
     git clone https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python.git
     pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
+    cd dashboard
     streamlit run PROYEKAKHIR.py
     ```
 
