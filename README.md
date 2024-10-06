@@ -29,6 +29,10 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     pipenv shell
     pip install -r requirements.txt
     ```
+## Run steamlit app
+    ```sh
+    streamlit run PROYEKAKHIR.py
+     ```
     
 ## ATAU langsung dengan  Instalasi
     ```sh
