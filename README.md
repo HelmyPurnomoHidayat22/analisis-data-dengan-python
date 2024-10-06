@@ -22,20 +22,18 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     
     
 ## Setup Environment - Shell/Terminal
-    ```sh
+    
     mkdir dashboard
     cd dashboard
     pipenv install
     pipenv shell
     pip install -r requirements.txt
-    ```
+    
 ## Run steamlit app
-    ```sh
     streamlit run PROYEKAKHIR.py
-     ```
+    
     
 ## ATAU langsung dengan  Instalasi
-    ```sh
     cd D:
     mkdir D:\dashboard
     cd dashboard
@@ -46,10 +44,10 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
     cd dashboard
     streamlit run PROYEKAKHIR.py
-    ```
+    
 
 
 ### Dibawah ini link deploy streamlit
-    ```sh
+    
     https://ecommerc-analysdataprojectakhir.streamlit.app/
-    ```
+    
