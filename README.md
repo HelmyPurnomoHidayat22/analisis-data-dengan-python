@@ -15,11 +15,11 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
 - [Matplotlib] - Library untuk membuat grafik statis, animasi, dan interaktif
 
 ## Setup Environment - Anaconda
-    ```sh
+    
     conda create --name main-ds python=3.9
     conda activate main-ds
     pip install -r requirements.txt
-    ```
+    
     
 ## Setup Environment - Shell/Terminal
     ```sh
