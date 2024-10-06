@@ -14,7 +14,23 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
 - [Plotly] - Library untuk visualisasi data interaktif
 - [Matplotlib] - Library untuk membuat grafik statis, animasi, dan interaktif
 
-## Instalasi
+## Setup Environment - Anaconda
+    ```sh
+    conda create --name main-ds python=3.9
+    conda activate main-ds
+    pip install -r requirements.txt
+    ```
+    
+## Setup Environment - Shell/Terminal
+    ```sh
+    mkdir dashboard
+    cd dashboard
+    pipenv install
+    pipenv shell
+    pip install -r requirements.txt
+    ```
+    
+## ATAU langsung dengan  Instalasi
     ```sh
     cd D:
     mkdir D:\dashboard
@@ -29,5 +45,7 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
     ```
 
 
-```### Dibawah ini link deploy streamlit
-https://ecommerc-analysdataprojectakhir.streamlit.app/
+### Dibawah ini link deploy streamlit
+    ```sh
+    https://ecommerc-analysdataprojectakhir.streamlit.app/
+    ```
