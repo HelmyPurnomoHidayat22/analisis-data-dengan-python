@@ -1,0 +1,8 @@
+link deploy streamlit
+https://ecommerc-analysdataprojectakhir.streamlit.app/ 
+
+link GitHub
+https://github.com/HelmyPurnomoHidayat22/analisis-data-dengan-python
+
+link google collab yang telah dijalankan
+https://colab.research.google.com/drive/1v4Bla9jLbtSWn_DMaQ5TYBAxMqAl2zZD?usp=sharing
