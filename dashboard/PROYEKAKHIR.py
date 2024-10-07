@@ -4,15 +4,24 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from datetime import datetime
-
-# Fungsi untuk memuat dan membersihkan dataset
+import requests
+##
 @st.cache_data
-def load_and_clean_data():
-    try:
-        # Memuat dataset
-        customers = pd.read_csv('olist_customers_dataset.csv')
-        orders = pd.read_csv('olist_orders_dataset.csv')
-        payments = pd.read_csv('olist_order_payments_dataset.csv')
+def load_data_from_github(url):
+    download = requests.get(url).content
+    df = pd.read_csv(io.StringIO(download.decode('utf-8')))
+    return df
+
+# Contoh URL file CSV dari GitHub
+customers_url = 'https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/data/olist_customers_dataset.csv'
+orders_url = 'https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/data/olist_orders_dataset.csv'
+payments_url = 'https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/data/olist_order_payments_dataset.csv'
+
+# Load data
+customers = load_data_from_github(customers_url)
+orders = load_data_from_github(orders_url)
+payments = load_data_from_github(payments_url)
+
 
         # Gabungkan dataset
         merged_data = pd.merge(customers, orders, on='customer_id')
