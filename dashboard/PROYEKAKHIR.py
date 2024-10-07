@@ -80,7 +80,7 @@ if data is not None:
             ax.plot(daily_sales['order_purchase_timestamp'], daily_sales['payment_value'])
             ax.set_xlabel('Tanggal')
             ax.set_ylabel('Total Penjualan')
-            ax.set_title('Tren Penjualan Harian')
+            ax.set_title('Tren Penjualan Harian')  # Perbaikan di sini
             plt.xticks(rotation=45)
             st.pyplot(fig)
 
@@ -91,7 +91,7 @@ if data is not None:
             ax.bar(payment_counts.index, payment_counts.values)
             ax.set_xlabel('Metode Pembayaran')
             ax.set_ylabel('Jumlah Pesanan')
-            ax.set_title('Jumlah Pesanan per Metode Pembayaran')
+            ax.set_title('Jumlah Pesanan per Metode Pembayaran')  # Perbaikan di sini
             plt.xticks(rotation=45)
             st.pyplot(fig)
 
@@ -100,7 +100,7 @@ if data is not None:
             payment_distribution = filtered_data['payment_type'].value_counts()
             fig, ax = plt.subplots(figsize=(10, 6))
             ax.pie(payment_distribution, labels=payment_distribution.index, autopct='%1.1f%%', startangle=90)
-            ax.set_title('Distribusi Metode Pembayaran')
+            ax.set_title('Distribusi Metode Pembayaran')  # Perbaikan di sini
             st.pyplot(fig)
 
         elif chart_type == "Grafik Area":
@@ -110,7 +110,7 @@ if data is not None:
             ax.fill_between(daily_sales['order_purchase_timestamp'], daily_sales['payment_value'])
             ax.set_xlabel('Tanggal')
             ax.set_ylabel('Penjualan Kumulatif')
-            ax.setTitle('Tren Penjualan Kumulatif')
+            ax.set_title('Tren Penjualan Kumulatif')  # Ubah setTitle menjadi set_title
             plt.xticks(rotation=45)
             st.pyplot(fig)
 
