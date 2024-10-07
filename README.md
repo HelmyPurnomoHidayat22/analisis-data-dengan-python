@@ -4,12 +4,9 @@
 ### Deskripsi
 Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jenis Diagram
 
-### Catatan
-untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tahun 2017 keatas 
-
 ## Open Source
 
-- [Streamlit] - Kerangka kerja untuk membuat aplikasi web dengan Python
+- [Streamlit] - Kerangka kerja untuk membuat aplikasi web dengan Python 
 - [Pandas] - Library Python untuk analisis data
 - [Plotly] - Library untuk visualisasi data interaktif
 - [Matplotlib] - Library untuk membuat grafik statis, animasi, dan interaktif
@@ -49,5 +46,5 @@ untuk bagian pilihan tahun 2016 kosong karena tidak ada datanya.Di run mulai tah
 
 ### Dibawah ini link deploy streamlit
     
-    https://ecommerc-analysdataprojectakhir.streamlit.app/
+    https://ecommercproyekakhir.streamlit.app/
     
