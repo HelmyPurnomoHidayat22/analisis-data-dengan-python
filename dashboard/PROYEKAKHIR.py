@@ -10,9 +10,9 @@ from datetime import datetime
 def load_and_clean_data():
     try:
         # Memuat dataset
-        customers = pd.read_csv('/olist_customers_dataset.csv')
-        orders = pd.read_csv('/olist_orders_dataset.csv')
-        payments = pd.read_csv('/olist_order_payments_dataset.csv')
+        customers = pd.read_csv('olist_customers_dataset.csv')
+        orders = pd.read_csv('olist_orders_dataset.csv')
+        payments = pd.read_csv('olist_order_payments_dataset.csv')
 
         # Gabungkan dataset
         merged_data = pd.merge(customers, orders, on='customer_id')
