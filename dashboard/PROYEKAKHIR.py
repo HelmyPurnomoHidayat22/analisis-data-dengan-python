@@ -5,7 +5,9 @@ import seaborn as sns
 import numpy as np
 from datetime import datetime
 import requests
-##
+import io  # Tambahkan import io
+
+# Fungsi untuk memuat data dari GitHub
 @st.cache_data
 def load_data_from_github(url):
     download = requests.get(url).content
@@ -17,11 +19,14 @@ customers_url = 'https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisi
 orders_url = 'https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/data/olist_orders_dataset.csv'
 payments_url = 'https://raw.githubusercontent.com/HelmyPurnomoHidayat22/analisis-data-dengan-python/main/dashboard/data/olist_order_payments_dataset.csv'
 
-# Load data
-customers = load_data_from_github(customers_url)
-orders = load_data_from_github(orders_url)
-payments = load_data_from_github(payments_url)
-
+# Fungsi untuk memuat dan membersihkan data
+@st.cache_data
+def load_and_clean_data():
+    try:
+        # Load data
+        customers = load_data_from_github(customers_url)
+        orders = load_data_from_github(orders_url)
+        payments = load_data_from_github(payments_url)
 
         # Gabungkan dataset
         merged_data = pd.merge(customers, orders, on='customer_id')
@@ -105,7 +110,7 @@ if data is not None:
             ax.fill_between(daily_sales['order_purchase_timestamp'], daily_sales['payment_value'])
             ax.set_xlabel('Tanggal')
             ax.set_ylabel('Penjualan Kumulatif')
-            ax.set_title('Tren Penjualan Kumulatif')
+            ax.setTitle('Tren Penjualan Kumulatif')
             plt.xticks(rotation=45)
             st.pyplot(fig)
 
