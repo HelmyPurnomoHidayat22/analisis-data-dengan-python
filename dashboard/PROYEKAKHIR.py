@@ -36,13 +36,6 @@ def load_and_clean_data():
         merged_data = pd.merge(customers, orders, on='customer_id')
         merged_data = pd.merge(merged_data, payments, on='order_id')
 
-        # Pengecekan missing value
-        st.write("Cek missing value per kolom:")
-        st.write(merged_data.isnull().sum())
-
-        # Pengecekan duplicate
-        st.write(f"Jumlah duplikat dalam data: {merged_data.duplicated().sum()}")
-
         # Data cleaning
         merged_data = merged_data.dropna()
         merged_data = merged_data.drop_duplicates()
