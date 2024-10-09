@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -36,20 +35,20 @@ def load_and_clean_data():
         merged_data = pd.merge(customers, orders, on='customer_id')
         merged_data = pd.merge(merged_data, payments, on='order_id')
 
+        # Pengecekan duplicate
+        st.write(f"Jumlah duplikat dalam data: {merged_data.duplicated().sum()}")
+
         # Data cleaning
         merged_data = merged_data.dropna()
         merged_data = merged_data.drop_duplicates()
         merged_data['order_purchase_timestamp'] = pd.to_datetime(merged_data['order_purchase_timestamp'])
-
-
-        
 
         # Menghapus outlier pada payment_value
         Q1 = merged_data['payment_value'].quantile(0.25)
         Q3 = merged_data['payment_value'].quantile(0.75)
         IQR = Q3 - Q1
         merged_data = merged_data[(merged_data['payment_value'] >= Q1 - 1.5 * IQR) & 
-                                  (merged_data['payment_value'] <= Q3 + 1.5 * IQR)]
+                                   (merged_data['payment_value'] <= Q3 + 1.5 * IQR)]
 
         # Pastikan kolom yang dibutuhkan ada
         required_columns = ['order_purchase_timestamp', 'payment_type', 'payment_value']
@@ -66,8 +65,7 @@ def load_and_clean_data():
 # Memuat data
 data = load_and_clean_data()
 
-if data is not None
-
+if data is not None:
     # Judul aplikasi
     st.title("Dashboard Analisis E-commerce")
 
