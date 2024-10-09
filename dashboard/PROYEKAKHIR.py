@@ -66,10 +66,7 @@ def load_and_clean_data():
 # Memuat data
 data = load_and_clean_data()
 
-if data is not None:
-    # Tampilkan beberapa baris data untuk debugging
-    st.subheader("Contoh Data")
-    st.write(data.head())
+if data is not None
 
     # Judul aplikasi
     st.title("Dashboard Analisis E-commerce")
