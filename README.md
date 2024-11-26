@@ -46,5 +46,5 @@ Dashboard ini menampilkan  data  Berdasarkan Bulan dan Tahun dengan memilih  Jen
 
 ### Dibawah ini link deploy streamlit
     
-    https://ecommercproyekakhir.streamlit.app/
+    https://ecommerc-a.streamlit.app/
     
